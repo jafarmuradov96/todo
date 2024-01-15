@@ -1,0 +1,11 @@
+.todos p {
+    background-color: rgb(224, 222, 222);
+    /* width: 150px; */
+    border-radius: 10px;
+    margin: 0 auto;    
+    color: #3c3c3c;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    padding: 5px;
+    font-size: 18px;
+}

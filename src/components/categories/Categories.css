@@ -1,0 +1,8 @@
+.categories select {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 7px;
+    color: rgb(71, 77, 77);
+}

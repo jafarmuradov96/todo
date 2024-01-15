@@ -1,0 +1,120 @@
+.lists {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+
+.list {
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgb(112, 122, 122);
+    padding: 14px;
+    border-radius: 9px;
+    margin: 0.5rem 0;
+    display: flex;
+    transform: translateX(-20px); 
+    gap: 20px;   
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.list-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list input {
+    /* transform: translateX(-130px); */
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 18px;
+    text-align: left;
+}
+
+.list button {
+    /* transform: translateX(370px); */
+    padding: 6px;
+    line-height: 22px;
+    color: 18px;
+}
+
+.delete {
+    background-color: red;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+}
+
+.edit {
+    background-color: cornflowerblue;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+}
+
+.clock {
+    padding: 2px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.list-left {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.list-content {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* gap: 5px; */
+}
+
+.new-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: black;
+}
+
+.completed {
+    background-color: green !important;
+    color: #ffffff !important;
+}
+.incompleted {
+    background-color: blue !important;
+    color: #ffffff !important;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.result {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
