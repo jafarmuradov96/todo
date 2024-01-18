@@ -57,7 +57,7 @@ const TodoItem = ({ item, handleCheckboxChange, deleteRow, handleEditModal, sele
           <Button
             className="edit"
             onClick={() =>
-              handleEditModal(item.id, item.title, item.select, item.isChecked)
+              handleEditModal(item.id, item.title, item.isChecked)
             }
           >
             Edit

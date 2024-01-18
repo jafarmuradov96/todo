@@ -2,7 +2,7 @@ import '../todo/TodoList.css';
 import TodoItem from './TodoItem';
 
 
-const TodoList = ({data, setData, deleteRow, select, isChecked, setIsChecked, handleEditModal}) => {
+const TodoList = ({data, setData, deleteRow, isChecked,  handleEditModal}) => {
 
 
     const listTitle = data.length <= 0 ? 'No Todos' : "Todo list";
@@ -27,7 +27,6 @@ const TodoList = ({data, setData, deleteRow, select, isChecked, setIsChecked, ha
                     isChecked = {isChecked}
                     handleEditModal = {handleEditModal}
                     handleCheckboxChange = {handleCheckboxChange}
-                    select = {select}
                     />
                 ))
             }
