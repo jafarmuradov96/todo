@@ -1,6 +1,6 @@
     import { useState } from 'react';
-    import Button from '../UI/Button';
-    import Modal from '../UI/Modal';
+    import Button from '../../UI/Button';
+    import Modal from '../../UI/Modal';
     import '../todo/Todo.css';
     import TodoList from '../todo/TodoList';
 
