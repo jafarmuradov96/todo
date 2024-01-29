@@ -2,7 +2,7 @@ import '../todo/TodoList.css';
 import TodoItem from './TodoItem';
 
 
-const TodoList = ({data, setData, deleteRow, isChecked,  handleEditModal}) => {
+const TodoList = ({data, setData, deleteRow, isChecked, setIsChecked,  handleEditModal}) => {
 
 
     const listTitle = data.length <= 0 ? 'No Todos' : "Todo list";
@@ -13,6 +13,7 @@ const TodoList = ({data, setData, deleteRow, isChecked,  handleEditModal}) => {
             item.id === id ? { ...item, isChecked: !item.isChecked } : item
           )
         );
+        setIsChecked(true)
       };
     return (
         <div className='todos'>

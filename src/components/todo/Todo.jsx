@@ -43,7 +43,7 @@
                         return {
                             ...el,
                             title: newTitle,
-                            isChecked: newIsChecked,
+                            // isChecked: newIsChecked,
                         };
                     }
                     return el;
@@ -56,7 +56,7 @@
         setData((prevList) => {
             return [
             ...prevList,
-            {title, isChecked,  id: Math.random().toString()}
+            {title,   id: Math.random().toString()}
             ]    
         }) 
         }
@@ -74,7 +74,6 @@
             setTitle('');
             setIsModal(false)
         }
-
 
 
         return (

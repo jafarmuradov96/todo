@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../../UI/Button";
 import "./TodoItem.css";
 
-const TodoItem = ({ item, handleCheckboxChange, deleteRow, handleEditModal, select}) => {
+const TodoItem = ({ item, handleCheckboxChange, deleteRow, handleEditModal}) => {
   const [dateInfo, setDateInfo] = useState({
     id: item.id,
     date: new Date().getDate(),
