@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../../UI/Button";
 import "./TodoItem.css";
 
@@ -12,6 +12,16 @@ const TodoItem = ({ item, handleCheckboxChange, deleteRow, handleEditModal}) => 
     minute: new Date().getMinutes(),
   });
 
+  useEffect(() => {
+    const savedDateInfo = localStorage.getItem(`todoItemDate_${item.id}`);
+    if (savedDateInfo) {
+      setDateInfo(JSON.parse(savedDateInfo));
+    }
+  }, [item.id]);
+
+  useEffect(() => {
+    localStorage.setItem(`todoItemDate_${item.id}`, JSON.stringify(dateInfo));
+  }, [item.id, dateInfo]);
 
   return (
     <>
