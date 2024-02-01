@@ -1,4 +1,4 @@
-    import { useState } from 'react';
+    import { useEffect, useState } from 'react';
     import Button from '../../UI/Button';
     import Modal from '../../UI/Modal';
     import '../todo/Todo.css';
@@ -12,6 +12,18 @@
         const [itemId, setItemId] = useState(null);
         const [isChecked, setIsChecked] = useState(false);
         const [modalAction, setModalAction] = useState('Add Task');
+
+        
+        useEffect(() => {
+            const savedData = localStorage.getItem('todoData');
+            if (savedData) {
+                setData(JSON.parse(savedData));
+            }
+        }, []);
+    
+        useEffect(() => {
+            localStorage.setItem('todoData', JSON.stringify(data));
+        }, [data]);
 
 
         const handleTitle = (e) => {
@@ -43,7 +55,6 @@
                         return {
                             ...el,
                             title: newTitle,
-                            // isChecked: newIsChecked,
                         };
                     }
                     return el;
